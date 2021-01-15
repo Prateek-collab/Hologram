@@ -2,6 +2,7 @@ package com.prateek.hologram.activity
 
 
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -124,8 +125,10 @@ class SignUpActivity : AppCompatActivity() {
 
         val userMap=HashMap<String,Any>()
         userMap["uid"]=currentUserID
-        userMap["fullname"]=currentUserID
-        userMap["username"]=currentUserID
+        userMap["fullname"]=name
+        userMap["username"]=username
+        userMap["password"]=pass
+        userMap["cpassword"]=confirmpass
         userMap["bio"]="Welcome to my hologram!"
         userMap["image"]="https://firebasestorage.googleapis.com/v0/b/hologram-app-10891.appspot.com/o/Default%20Images%2Fprofile.png?alt=media&token=52e14046-454f-4795-88a7-1d7bfe666f89"
 
