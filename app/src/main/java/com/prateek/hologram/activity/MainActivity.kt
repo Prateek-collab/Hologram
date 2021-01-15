@@ -14,35 +14,29 @@ import com.prateek.hologram.fragment.SearchFragment
 class MainActivity : AppCompatActivity() {
 
     private lateinit var textView:TextView
-    internal lateinit var selectedFragment:Fragment
 
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.nav_home -> {
-                selectedFragment = HomeFragment()
+                displayFragment(HomeFragment())
+                return@OnNavigationItemSelectedListener true
             }
             R.id.nav_search -> {
-                selectedFragment = SearchFragment()
+                displayFragment(SearchFragment())
+                return@OnNavigationItemSelectedListener true
             }
             R.id.nav_upload -> {
-                textView.setText("Upload")
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_notifications -> {
-                selectedFragment = NotificationsFragment()
+                displayFragment(NotificationsFragment())
+                return@OnNavigationItemSelectedListener true
             }
             R.id.nav_profile -> {
-                selectedFragment = ProfileFragment()
+                displayFragment(ProfileFragment())
+                return@OnNavigationItemSelectedListener true
             }
         }
-        if (selectedFragment!=null)
-        {
-            supportFragmentManager.beginTransaction().replace(
-                    R.id.frame_layout,
-                    selectedFragment!!
-            ).commit()
-        }
-
         false
     }
 
@@ -55,9 +49,12 @@ class MainActivity : AppCompatActivity() {
 
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
-        supportFragmentManager.beginTransaction().replace(
-                R.id.frame_layout,
-                HomeFragment()
-        ).commit()
+        displayFragment(HomeFragment())
+    }
+
+    private fun displayFragment(fragment:Fragment){
+        val fragmentTrans = supportFragmentManager.beginTransaction()
+        fragmentTrans.replace(R.id.frame_layout,fragment)
+        fragmentTrans.commit()
     }
 }

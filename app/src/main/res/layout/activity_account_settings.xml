@@ -59,10 +59,12 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Change Image"
+        android:clickable="true"
         android:textSize="16sp"
         android:layout_marginTop="6dp"
         android:layout_below="@+id/profile_img"
-        app:drawableRightCompat="@drawable/ic_baseline_edit_24" />
+        app:drawableRightCompat="@drawable/ic_baseline_edit_24"
+        android:focusable="true" />
 
     <EditText
         android:id="@+id/full_name"

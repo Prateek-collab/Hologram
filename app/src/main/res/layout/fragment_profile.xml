@@ -72,10 +72,11 @@
                     android:padding="16dp"/>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
                     android:orientation="vertical" >
 
                     <LinearLayout
@@ -160,12 +161,13 @@
                     </LinearLayout>
 
                     <Button
-                        android:id="@+id/btn_editprofile"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="170dp"
+                        android:id="@+id/edit_account_settings_btn"
+                        android:layout_width="200dp"
                         android:layout_height="35dp"
                         android:text="Edit Profile"
                         android:layout_margin="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
                         android:textAllCaps="false"/>
 
                 </LinearLayout>
@@ -183,6 +185,7 @@
                     android:id="@+id/full_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="Full Name"
                     android:textSize="13sp"
                     android:textStyle="bold"/>
@@ -191,6 +194,7 @@
                     android:id="@+id/bio_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="Bio"
                     android:textSize="13sp" />
             </LinearLayout>
@@ -199,7 +203,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@drawable/button_black_background"
+                android:background="@color/cardview_shadow_end_color"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp">
@@ -210,11 +214,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/grid"
+                    android:layout_gravity="center"
                     style="?android:attr/buttonBarButtonStyle"/>
                 <ImageButton
                     android:id="@+id/btn_images"
                     android:layout_width="1dp"
-                    android:layout_height="49dp"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center"
                     android:scaleType="fitCenter"
                     android:layout_weight="1"
                     android:src="@drawable/ic_baseline_assignment"

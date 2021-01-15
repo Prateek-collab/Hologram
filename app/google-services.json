@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265302484204",
+    "project_id": "hologram-app-10891",
+    "storage_bucket": "hologram-app-10891.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265302484204:android:138ecc7f5da82ef210b1c9",
+        "android_client_info": {
+          "package_name": "com.prateek.hologram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265302484204-6skrfeldfkr64fuf53pcfobj4h3re0qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnhwDHXrekihGKziV2RGzRMq1KuRelIfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265302484204-6skrfeldfkr64fuf53pcfobj4h3re0qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
